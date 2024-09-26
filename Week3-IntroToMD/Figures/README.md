@@ -1,0 +1,1 @@
+This are the figures of the trip cage cube in water according to time and time indipendent.The figures here presented in screenshots are trip cage cube in water and trip cage cube without solveted system. The figure PDF represent trip cage cube with respected to various time intervals. 

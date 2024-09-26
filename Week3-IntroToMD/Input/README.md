@@ -1,0 +1,1 @@
+The inpute file basically suggested by the gromax in lysome water system.That inout files has been created in .mdp file formate and entered for various data generation on gromax like pressure vs time, Gyration radious vs time,Tempt. vs time and so on.

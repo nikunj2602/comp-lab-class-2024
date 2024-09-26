@@ -1,0 +1,1 @@
+This are the all data fiels that have been used for the genrate the plots in jupiter by using codes and this data is received by hitting commands on shell following grromax module of lysome but here tripcage is used in water and data file here in.xvg formate for plot of density,pressure,radius of gyration, etc.
