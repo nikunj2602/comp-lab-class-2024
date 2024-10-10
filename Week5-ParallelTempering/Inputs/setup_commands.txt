@@ -1,0 +1,12 @@
+# Commands executed to set up directories
+
+mkdir T300 T400 T600
+
+for temp in 300 400 600; do
+
+    cp ions.tpr T${temp}/
+
+    sed -i "s/temperature = [0-9]*/temperature = ${temp}/" T${temp}/adp.tpr
+
+done
+
