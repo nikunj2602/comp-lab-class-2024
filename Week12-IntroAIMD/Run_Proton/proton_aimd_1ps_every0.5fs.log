@@ -1,0 +1,285 @@
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2024-11-21 16:01:18.336
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cm003.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                               ndv3235
+ ***** **    ** ** **   PROGRAM PROCESS ID                               1608243
+  **** **  *******  **  PROGRAM STARTED IN /home/ndv3235/comp-lab-class-2024/Wee
+                                           k12-IntroAIMD/Run_Proton
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                Proton.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                         proton.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                  proton_aimd_1ns_every0.5f
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            395391424     395391424     395391424     395391424
+ MEMORY| MemFree             304851052     304851052     304851052     304851052
+ MEMORY| Buffers                 32744         32744         32744         32744
+ MEMORY| Cached               60555272      60555272      60555272      60555272
+ MEMORY| Slab                  3673340       3673340       3673340       3673340
+ MEMORY| SReclaimable          2869804       2869804       2869804       2869804
+ MEMORY| MemLikelyFree       368308872     368308872     368308872     368308872
+
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]    Number of lines in XYZ format not equal to the number of atoms.  *
+ *  \___/    Error in XYZ format. Very probably the line with title is missing *
+ *    |         or is empty. Please check the XYZ file and rerun your job!     *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                      topology_xyz.F:155 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            5 read_coordinate_xyz
+            4 coordinate_control_READ_COORDINATE
+            3 coordinate_control
+            2 topology_control
+            1 CP2K
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2024-11-21 16:11:12.314
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cs004.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                               ndv3235
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2584843
+  **** **  *******  **  PROGRAM STARTED IN /home/ndv3235/comp-lab-class-2024/Wee
+                                           k12-IntroAIMD/Run_Proton
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                Proton.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                         proton.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                  proton_aimd_1ns_every0.5f
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            197210712     197210712     197210712     197210712
+ MEMORY| MemFree             109682832     109682832     109682832     109682832
+ MEMORY| Buffers                124024        124024        124024        124024
+ MEMORY| Cached               53549256      53549256      53549256      53549256
+ MEMORY| Slab                  1599820       1599820       1599820       1599820
+ MEMORY| SReclaimable           907560        907560        907560        907560
+ MEMORY| MemLikelyFree       164263672     164263672     164263672     164263672
+
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]    Number of lines in XYZ format not equal to the number of atoms.  *
+ *  \___/    Error in XYZ format. Very probably the line with title is missing *
+ *    |         or is empty. Please check the XYZ file and rerun your job!     *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                      topology_xyz.F:155 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            5 read_coordinate_xyz
+            4 coordinate_control_READ_COORDINATE
+            3 coordinate_control
+            2 topology_control
+            1 CP2K
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2024-11-21 20:01:21.668
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cm045.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                               ndv3235
+ ***** **    ** ** **   PROGRAM PROCESS ID                               1876365
+  **** **  *******  **  PROGRAM STARTED IN /home/ndv3235/comp-lab-class-2024/Wee
+                                           k12-IntroAIMD/Run_Proton
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                Proton.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                         proton.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                  proton_aimd_1ns_every0.5f
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            395095004     395095004     395095004     395095004
+ MEMORY| MemFree             214925200     214925200     214932508     214931899
+ MEMORY| Buffers                187308        187308        187308        187308
+ MEMORY| Cached              106502980     106502940     106502980     106502943
+ MEMORY| Slab                  2221136       2221136       2221136       2221136
+ MEMORY| SReclaimable          1452452       1452452       1452452       1452452
+ MEMORY| MemLikelyFree       323067940     323067940     323075208     323074602
+
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]    Number of lines in XYZ format not equal to the number of atoms.  *
+ *  \___/    Error in XYZ format. Very probably the line with title is missing *
+ *    |         or is empty. Please check the XYZ file and rerun your job!     *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                      topology_xyz.F:155 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            5 read_coordinate_xyz
+            4 coordinate_control_READ_COORDINATE
+            3 coordinate_control
+            2 topology_control
+            1 CP2K
